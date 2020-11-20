@@ -1,0 +1,6 @@
+{
+  "weights_file": "weights/multi_task_orientation+pose+detection_09_01_auto02_mobilenetv2_large_lr_00005_25.02.2020-02_20_46.212257_epoch_142.pt",
+  "detection_validation_threshold": 0.16450202465057373,
+  "network_type": "mobilenetv2_large_pretrained_additional_dense",
+  "tasks": "detection+orientation+pose"
+}

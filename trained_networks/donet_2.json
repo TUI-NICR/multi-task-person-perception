@@ -1,0 +1,6 @@
+{
+  "weights_file": "weights/multi_task_orientation+pose+detection_09_01_auto01_donet_lr_005_24.02.2020-05_21_44.586442_epoch_167.pt",
+  "detection_validation_threshold": 0.14738650619983673,
+  "network_type": "donet_depth_126_48",
+  "tasks": "detection+orientation+pose"
+}
