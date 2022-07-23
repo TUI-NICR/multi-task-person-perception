@@ -200,8 +200,7 @@ cd /path/to/this/repository
 
 
 ## License and Citations
-The source code and the network weights are published under BSD 3-Clause license, 
-see [license file](LICENSE) for details. 
+The source code is published under BSD 3-Clause license, see [license file](LICENSE) for details. 
 
 If you use the source code or the network weights, please cite the following paper:
 >Seichter, D., Lewandowski, B., Höchemer D., Wengefeld T., Gross, H.-M.
