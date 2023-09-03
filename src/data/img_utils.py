@@ -71,14 +71,16 @@ def check_dtype(dtype, allowed_dtypes):
         else:
             allowed_dtypes = [allowed_dtypes]
 
+    # np.bool is deprecated in numpy > 1.20
+    # see: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
     # fix bool type, since np.issubdtype(any_type, bool) is always true
     # see: https://github.com/numpy/numpy/issues/5711
-    try:
-        idx = allowed_dtypes.index(np.bool)
-        allowed_dtypes[idx] = np.bool_
-    except ValueError:
-        # np.bool/bool is not in allowed_dtypes
-        pass
+    # try:
+    #     idx = allowed_dtypes.index(np.bool)
+    #     allowed_dtypes[idx] = np.bool_
+    # except ValueError:
+    #     # np.bool/bool is not in allowed_dtypes
+    #     pass
 
     # check dtype
     for allowed_dtype in allowed_dtypes:
